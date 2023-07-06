@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 const Skills = () => {
   return (
-    <section className="section my-32" id="skills">
+    <section className="section mt-40" id="skills">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <div className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
@@ -166,7 +166,7 @@ const Skills = () => {
             <motion.div  variants={fadeIn('left', 0.6)}
              initial="hidden"
              whileInView={"show"}
-             viewport={{once:false, amount:0.7}} className="group relative overflow-hidden border-2 border-white/50 rounded-xl p-8">
+             viewport={{once:false, amount:0.7}} className="group relative overflow-hidden border-2 border-white/50 rounded-xl p-8 mb-40">
               <div className="">
                 <h3>Backend Development</h3>
                 <div className="flex justify-between">

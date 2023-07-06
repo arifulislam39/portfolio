@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import image from "../assets/image-removebg-preview.png";
 import { FaLinkedin, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
-// import "./banner.css"
 const Banner = () => {
   return (
     <section
@@ -14,12 +13,13 @@ const Banner = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           <div className="flex-1 text-center font-secondary lg:text-left">
+           
             <motion.h1
              variants={fadeIn('up', 0.3)}
              initial="hidden"
              whileInView={"show"}
              viewport={{once:false, amount:0.7}}
-             className="text-[55px] lg:text-[110px] font-bold leading-[0.8]">
+             className="text-[55px] lg:text-[90px] font-bold leading-[0.8]">
               ARIFUL <span>ISLAM</span>
             </motion.h1>
             <motion.div variants={fadeIn('up', 0.4)}
@@ -35,6 +35,7 @@ const Banner = () => {
                   2000,
                   "FULL STACK",
                   2000,
+                  "MERN STACK"
                 ]}
                 speed={50}
                 className="text-accent"
@@ -46,12 +47,8 @@ const Banner = () => {
              initial="hidden"
              whileInView={"show"}
              viewport={{once:false, amount:0.7}} className="mb-8 max-w-lg mx-auto lg:mx-0">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
-              nulla enim eaque, culpa adipisci voluptate? Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Pariatur nulla enim eaque,
-              culpa adipisci voluptate? Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Pariatur nulla enim eaque, culpa adipisci
-              voluptate?
+              I am a highly motivated MERN stack developer, With  solid JavaScript foundation and passion for building dynamic web applications. Proficient in React, MongoDB, Express.js, and Node.js, With an unwavering commitment to continuous improvement, collaborative problem-solving, and delivering exceptional results.
+
             </motion.p>
             <motion.div  variants={fadeIn('up', 0.6)}
              initial="hidden"

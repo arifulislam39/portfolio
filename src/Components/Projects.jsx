@@ -5,7 +5,7 @@ import img2 from "../assets/project.img2.png"
 import img3 from "../assets/project.img3.png"
 const Projects = () => {
   return (
-    <section className="section mb-20" id="projects">
+    <section className="section my-40" id="projects">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-20">
           <div className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
