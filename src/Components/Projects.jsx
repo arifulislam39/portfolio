@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import img1 from "../assets/portfolio-img1.png";
-import img2 from "../assets/portfolio-img2.png";
-import img3 from "../assets/portfolio-img3.png";
+import img1 from "../assets/portfolio.img1.png"
+import img2 from "../assets/project.img2.png"
+import img3 from "../assets/project.img3.png"
 const Projects = () => {
   return (
     <section className="section mb-20" id="projects">
@@ -19,20 +19,23 @@ const Projects = () => {
              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={img2}
+                src={img1}
                 alt=""
               />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient"> Ui/UX design</span>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-28 transition-all duration-500 z-50">
+                <span className="text-gradient text-3xl uppercase"> language center</span>
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Projects Title</span>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-10 transition-all duration-700 z-50">
+                <span className=" text-white ">This is a Full Stack Online Foreign Language Learning School Web Application.</span>
               </div>
              </div>
 
              <div className="text-center p-6">
-                <button className="btn mr-16">github</button>
-                <button className="btn">live demo</button>
+              <a href="https://github.com/arifulislam39/language-center-client" className="btn mr-6">Client-Side</a>
+              <a className="btn mr-6" href="https://github.com/arifulislam39/language-center-server" >Server-Side</a>
+                
+                <a className="btn" href="https://language-center-f4eb2.web.app/">Live demo</a>
+               
               </div>
 
             </motion.div>
@@ -46,19 +49,22 @@ const Projects = () => {
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
-                  src={img1}
+                  src={img2}
                   alt=""
                 />
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient"> Ui/UX design</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-20 transition-all duration-500 z-50">
+                  <span className="text-gradient text-3xl"> BABY CAR</span>
                 </div>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white">Projects Title</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-10 transition-all duration-700 z-50">
+                  <span className=" text-white">Online based Toy e-commerce web application</span>
                 </div>
               </div>
               <div className="text-center p-6">
-                <button className="btn mr-16">github</button>
-                <button className="btn">live demo</button>
+              <a href="https://github.com/arifulislam39/baby-car-client" className="btn mr-6">Client-Side</a>
+              <a className="btn mr-6" href="https://github.com/arifulislam39/baby-car-server" >Server-Side</a>
+                
+                <a className="btn" href="https://baby-car-57058.web.app/">Live demo</a>
+               
               </div>
             </motion.div>
           </div>
@@ -92,16 +98,20 @@ const Projects = () => {
                   alt=""
                 />
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient"> Ui/UX design</span>
+                  <span className="text-gradient text-3xl uppercase"> Cooking Experts</span>
                 </div>
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white">Projects Title</span>
+                  <span className=" text-white"> Online based chefs and recipes web application
+</span>
                 </div>
               </div>
 
               <div className="text-center p-6">
-                <button className="btn mr-16">github</button>
-                <button className="btn">live demo</button>
+              <a href="https://github.com/arifulislam39/COOKING-EXPERTS" className="btn mr-6">Client-Side</a>
+              <a className="btn mr-6" href="https://github.com/arifulislam39/COOKING-EXPERTS" >Server-Side</a>
+                
+                <a className="btn" href="https://delicious-dish-ed018.web.app/">Live demo</a>
+               
               </div>
             </motion.div>
           </div>
