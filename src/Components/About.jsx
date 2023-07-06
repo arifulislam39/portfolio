@@ -2,6 +2,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import CountUp from "react-countup";
+import img from "../assets/1685371263626-removebg-preview.png"
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -14,7 +15,8 @@ const About = () => {
           <motion.div  variants={fadeIn('right', 0.3)}
              initial="hidden"
              whileInView={"show"}
-             viewport={{once:false, amount:0.7}} className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top">
+             viewport={{once:false, amount:0.7}} className="flex-1 h-[640px] mix-blend-lighten bg-top">
+              <img src={img} alt="" />
             {/* img */}
           </motion.div>
           <motion.div 

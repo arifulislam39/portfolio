@@ -1,8 +1,10 @@
 import { TypeAnimation } from "react-type-animation";
+import resume from "../assets/Resume (23).pdf"
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import image from "../assets/avatar.svg";
+import image from "../assets/image-removebg-preview.png";
 import { FaLinkedin, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
+// import "./banner.css"
 const Banner = () => {
   return (
     <section
@@ -55,20 +57,22 @@ const Banner = () => {
              initial="hidden"
              whileInView={"show"}
              viewport={{once:false, amount:0.7}} className="flex gap-x-6 max-w-max items-center mb-12 mx-auto lg:mx-0">
-              <button className="btn btn-lg">Contact me</button>
-              <button className="btn btn-lg">Download Resume</button>
+              <a className="btn btn-lg" href="#contact">Lets talk</a>
+             
+              <a className="btn btn-lg" href={resume} download>Download Resume</a>
+             
             </motion.div>
             <motion.div  variants={fadeIn('up', 0.7)}
              initial="hidden"
              whileInView={"show"}
              viewport={{once:false, amount:0.7}} className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ariful-islam-93aa38278/">
                 <FaLinkedin />
               </a>
               <a href="#">
                 <FaFacebookSquare />
               </a>
-              <a href="#">
+              <a href="https://github.com/arifulislam39">
                 <FaGithubSquare />
               </a>
             </motion.div>
@@ -78,7 +82,7 @@ const Banner = () => {
              whileInView={"show"}
              viewport={{once:false, amount:0.7}} className="hidden flex-1 lg:flex max-w-[320px] lg:max-w-[482px] mx-auto">
             {/* image */}
-            <img src={image} alt="#" />
+            <img className="pic border-2 border-accent rounded-2xl" src={image} alt="#" />
           </motion.div>
         </div>
       </div>
